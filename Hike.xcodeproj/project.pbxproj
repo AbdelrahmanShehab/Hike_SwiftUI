@@ -18,6 +18,7 @@
 		63F66A092A506776008DEA69 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F66A082A506776008DEA69 /* GradientButton.swift */; };
 		63F66A0B2A506D54008DEA69 /* CustomCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F66A0A2A506D54008DEA69 /* CustomCircleView.swift */; };
 		63F66A0D2A506FE2008DEA69 /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F66A0C2A506FE2008DEA69 /* MotionAnimationView.swift */; };
+		63F66A102A508C0B008DEA69 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F66A0F2A508C0B008DEA69 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		63F66A082A506776008DEA69 /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		63F66A0A2A506D54008DEA69 /* CustomCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCircleView.swift; sourceTree = "<group>"; };
 		63F66A0C2A506FE2008DEA69 /* MotionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionAnimationView.swift; sourceTree = "<group>"; };
+		63F66A0F2A508C0B008DEA69 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				63F669EF2A505542008DEA69 /* HikeApp.swift */,
-				63F669F12A505542008DEA69 /* ContentView.swift */,
+				63F66A0E2A508BBD008DEA69 /* Screens */,
 				63F669FE2A505788008DEA69 /* Component */,
 				63F66A012A5057D9008DEA69 /* Utility */,
 				63F669F32A505545008DEA69 /* Assets.xcassets */,
@@ -102,6 +104,15 @@
 				63F66A082A506776008DEA69 /* GradientButton.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		63F66A0E2A508BBD008DEA69 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				63F669F12A505542008DEA69 /* ContentView.swift */,
+				63F66A0F2A508C0B008DEA69 /* SettingsView.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +190,7 @@
 				63F669F22A505542008DEA69 /* ContentView.swift in Sources */,
 				63F66A002A5057A3008DEA69 /* CardView.swift in Sources */,
 				63F66A072A5060D7008DEA69 /* CustomButtonView.swift in Sources */,
+				63F66A102A508C0B008DEA69 /* SettingsView.swift in Sources */,
 				63F66A092A506776008DEA69 /* GradientButton.swift in Sources */,
 				63F66A0D2A506FE2008DEA69 /* MotionAnimationView.swift in Sources */,
 				63F669F02A505542008DEA69 /* HikeApp.swift in Sources */,

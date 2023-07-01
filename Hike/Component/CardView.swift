@@ -11,6 +11,7 @@ struct CardView: View {
     // MARK: -  PROPERTIES
     @State private var imageNumber: Int = 1
     @State private var randomNumber: Int = 1
+    @State private var isShowingSheet: Bool = false
     
     // MARK: -  FUNCTIONS
     
@@ -39,9 +40,14 @@ struct CardView: View {
                         Spacer()
                         
                         Button {
-                            print("Make Action")
+                            isShowingSheet.toggle()
                         } label: {
                             CustomButtonView()
+                        }
+                        .sheet(isPresented: $isShowingSheet) {
+                            SettingsView()
+                                .presentationDragIndicator(.visible)
+                                .presentationDetents([.medium, .large])
                         }
 
                     }//: HSTACK
@@ -53,6 +59,7 @@ struct CardView: View {
                 }//: VSTACK - HEADER
                 .padding(.horizontal, 30)
                 
+                // MARK: -  MAIN CONTANT
                 ZStack {
                     CustomCircleView()
                     
