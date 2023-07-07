@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63A7E6192A58342500E51BC3 /* CustomListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A7E6182A58342500E51BC3 /* CustomListRowView.swift */; };
 		63F669F02A505542008DEA69 /* HikeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F669EF2A505542008DEA69 /* HikeApp.swift */; };
 		63F669F22A505542008DEA69 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F669F12A505542008DEA69 /* ContentView.swift */; };
 		63F669F42A505545008DEA69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63F669F32A505545008DEA69 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		63A7E6182A58342500E51BC3 /* CustomListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomListRowView.swift; sourceTree = "<group>"; };
 		63F669EC2A505542008DEA69 /* Hike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F669EF2A505542008DEA69 /* HikeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeApp.swift; sourceTree = "<group>"; };
 		63F669F12A505542008DEA69 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				63F66A062A5060D7008DEA69 /* CustomButtonView.swift */,
 				63F66A0A2A506D54008DEA69 /* CustomCircleView.swift */,
 				63F66A0C2A506FE2008DEA69 /* MotionAnimationView.swift */,
+				63A7E6182A58342500E51BC3 /* CustomListRowView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			files = (
 				63F66A052A505B3F008DEA69 /* CustomBackgroundView.swift in Sources */,
 				63F66A0B2A506D54008DEA69 /* CustomCircleView.swift in Sources */,
+				63A7E6192A58342500E51BC3 /* CustomListRowView.swift in Sources */,
 				63F669F22A505542008DEA69 /* ContentView.swift in Sources */,
 				63F66A002A5057A3008DEA69 /* CardView.swift in Sources */,
 				63F66A072A5060D7008DEA69 /* CustomButtonView.swift in Sources */,

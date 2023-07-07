@@ -60,6 +60,35 @@ struct SettingsView: View {
                 
             }//: HEADER
             .listRowSeparator(.hidden)
+            
+            // MARK: -  SECTION ICONS
+            
+            // MARK: -  SECTION ABOUT
+            Section {
+                CustomListRowView(rowLabel: "Application", rowIcon: "apps.iphone", rowContent: "Hike", rowTintColor: .blue)
+                
+                CustomListRowView(rowLabel: "Compatibility", rowIcon: "info.circle", rowContent: "iOS,iPadOS", rowTintColor: .red)
+                
+                CustomListRowView(rowLabel: "Technology", rowIcon: "swift", rowContent: "Swift", rowTintColor: .orange)
+                
+                CustomListRowView(rowLabel: "Version", rowIcon: "gear", rowContent: "1.0", rowTintColor: .purple)
+                
+                CustomListRowView(rowLabel: "Developer", rowIcon: "ellipsis.curlybraces", rowContent: "iShehab", rowTintColor: .indigo)
+                
+                CustomListRowView(rowLabel: "Designer", rowIcon: "paintpalette", rowContent: "Abdelrahman Shehab", rowTintColor: .pink)
+                
+                CustomListRowView(rowLabel: "Website", rowIcon: "globe", rowLinkLabel: "GitHub", rowLinkDestination: "https://github.com/AbdelrahmanShehab", rowTintColor: .GreenDark)
+            } header: {
+                Text("About The App")
+            } footer: {
+                HStack {
+                    Spacer()
+                    Text("Copyright © All Rights reserved.")
+                    Spacer()
+                }
+                .padding(.vertical, 8)
+            }//: SECTION
+
         }//: LIST
     }
 }
