@@ -8,6 +8,17 @@
 import SwiftUI
 
 struct SettingsView: View {
+    // MARK: -  PROPERTIES
+    private let alternateAppIcons: [String] = [
+        "AppIcon-MagnifyingGlass",
+        "AppIcon-Map",
+        "AppIcon-Camera",
+        "AppIcon-Backpack",
+        "AppIcon-Campfire",
+        "AppIcon-Mushroom"
+    ]
+    
+    // MARK: -  BODY
     var body: some View {
         List {
             // MARK: -  SECTION: HEADER
@@ -62,6 +73,42 @@ struct SettingsView: View {
             .listRowSeparator(.hidden)
             
             // MARK: -  SECTION ICONS
+            Section(header: Text("Alternate AppIcon")) {
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 12) {
+                        ForEach(alternateAppIcons.indices, id: \.self) { icon in
+                            Button {
+                                UIApplication.shared.setAlternateIconName(alternateAppIcons[icon]) { error in
+                                    if error != nil {
+                                        print("Failed request to update the app's icon \(String(describing: error?.localizedDescription))")
+                                    } else {
+                                        print("Success! you have changed the app's icon to \(alternateAppIcons[icon])")
+                                    }
+                                }
+                            } label: {
+                                Image("\(alternateAppIcons[icon])-Preview")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 80, height: 80)
+                                    .cornerRadius(16)
+                            }//:BUTTON
+                            .buttonStyle(.borderless)
+                        }//:LOOP
+                    }//:HSTACK
+                }//:SCROLL
+                .padding(.top, 12)
+                
+                Text("Choose your favorite app icon from the collection above.")
+                    .frame(minWidth: 0, maxHeight: .infinity)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.secondary)
+                    .font(.footnote)
+                    .padding(.bottom, 12)
+                
+                
+            } //: SECTION
+            .listRowSeparator(.hidden)
+            
             
             // MARK: -  SECTION ABOUT
             Section {
@@ -88,7 +135,7 @@ struct SettingsView: View {
                 }
                 .padding(.vertical, 8)
             }//: SECTION
-
+            
         }//: LIST
     }
 }
@@ -98,3 +145,4 @@ struct SettingsView_Previews: PreviewProvider {
         SettingsView()
     }
 }
+
